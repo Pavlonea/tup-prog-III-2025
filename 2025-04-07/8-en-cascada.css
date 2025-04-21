@@ -1,0 +1,11 @@
+p {
+   color: blue;
+   font-family: serif;
+}
+.red {
+   color: red;
+}
+#especial {
+   color: green;
+   font-family: Arial;
+}

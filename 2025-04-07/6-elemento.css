@@ -1,0 +1,6 @@
+strong {
+   color: orange;
+   }
+   p strong{
+    background-color: green;
+   }

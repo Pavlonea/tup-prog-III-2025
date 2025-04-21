@@ -1,0 +1,12 @@
+.encabezado {
+    background-color: lime;
+}
+h1.Encabezado {
+    color: orange;
+   }
+   p.Encabezado{
+    color: red;
+   }
+   .nombre{
+    color: grey;
+   }
