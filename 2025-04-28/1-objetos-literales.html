@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Objeto literal</title>
+</head>
+<body>
+    <script>
+        const objeto = {
+            //propiedades
+            Texto: "Hola",
+            numero: 13,
+            "una propiedad": 666.666, // propiedad con espacios
+            contraseña: 1234, // propiedad con caracteres especiales
+
+            //metodos
+            suma(a, b) {
+                return a + b;
+            },
+            restar: function(a, b) {
+                return a - b;
+            },
+            multiplicar: (a, b) => {
+                return a * b;
+            },
+        };
+
+        //Leer propiedades del objeto
+        console.log(objeto.Texto); // Hola
+        console.log(objeto.numero); // 13
+        console.log(objeto["numero"]);
+        console.log(objeto["una propiedad"]);
+        console.log(objeto.contraseña);
+        console.log(objeto);
+
+        // Modificar el valor de una propiedad
+        objeto.Texto = "Mensaje"; 
+        console.log(objeto.Texto); // Mensaje
+
+        // Agregar una propiedad al objeto
+        objeto.sumatoria = 36
+        console.log(objeto);
+
+        //metodos
+        console.log(objeto.suma(2, 3)); // 5
+        console.log(objeto.restar(5, 3)); // 2
+        console.log(objeto.multiplicar(2, 3)); // 6
+
+        //undefined
+        console.log(objeto.abc);
+        console.log(objeto["abc"]);
+
+        objeto.sumatoria = 3;
+        console.log(objeto);
+        objeto.sumatoria = undefined;
+        console.log(objeto);
+        delete objeto.sumatoria; // eliminar propiedad
+        console.log(objeto);
+    </script>   
+</body>
+</html>

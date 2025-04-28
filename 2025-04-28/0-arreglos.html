@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Arreglo</title>
+</head>
+<body>
+    <script>
+        // Definición de un arreglo
+        const arreglo = [1, 2, 3, 4, 9, 8];
+
+        //leer en una posicion
+        console.log(arreglo[1]);
+
+        // Mofificar un elemento en una posición
+        arreglo[2] = 5;
+        console.log(arreglo[2]);
+
+        //agregar un elemento al final del arreglo
+        arreglo.push(9);
+        console.log(arreglo);
+
+        // quitar el último elemento del arreglo
+        arreglo.pop();
+        console.log(arreglo);
+
+        // mostrar longitud del arreglo   
+        console.log(arreglo.length);
+        
+        //ver en una posición negativa
+        console.log(arreglo.at(1)); // último elemento
+        console.log(arreglo.at(-2)); // penúltimo elemento  
+        console.log(arreglo.at(-3)); // antepenúltimo elemento
+    </script>   
+</body>
+</html>
