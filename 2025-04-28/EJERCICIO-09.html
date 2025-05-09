@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ejercicio 9</title>
+</head>
+<body>
+    <script>
+       const palabra = " paLa Bra ";
+
+       function esPalindromo(palabra) {
+        //Limpieza 
+        //trim() elimina los espacios al principio y al final de la cadena
+        //toLowerCase() convierte la cadena a minúsculas
+        //replaceAll() elimina los espacios en blanco de la cadena
+        //replace: reemplaza un texto (una coicidencia) por otro texto (una coincidencia)
+
+            const palabraLimpia = palabra.trim().toLowerCase(). replaceAll("", "");
+            //split: divide la cadena en un arreglo de caracteres
+            //reverse: invierte el orden de los elementos del arreglo
+            //join: une los elementos del arreglo en una cadena
+            const supuestoPalindromo = palabraLimpia.split('').reverse().join("");
+            
+            return palabraLimpia === supuestoPalindromo;
+        
+        }
+
+        console.log(esPalindromo("Pal BRA")); // true o false dependiendo de si es palíndromo o no
+        console.log(esPalindromo("neuquen")); // false
+        console.log(esPalindromo("Ana")); // true
+    </script>
+</body>
+</html>

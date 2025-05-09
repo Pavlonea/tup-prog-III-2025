@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ejercicio 10</title>
+</head>
+<body>
+    <script>
+        const calificacines = [
+            {nombre: 'Lengua', calificacion: 8},
+            {nombre: 'Matematicas', calificacion: 9},
+            {nombre: 'Ciencias', calificacion: 7},
+            {nombre: 'Historia', calificacion: 10},
+        ];
+        function promedioCalificaciones(calificacines) {
+            let suma = 0;
+            for (const calificacion of calificacines) {
+                suma += calificacion.calificacion;
+            }
+            return suma / calificacines.length;
+        }
+
+        console.log(promedioCalificaciones(calificacines));
+        // El promedio de las calificaciones es: 8.5
+    </script>
+</body>
+</html>
